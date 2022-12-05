@@ -1,0 +1,87 @@
+.elementor-section {
+  &.gg-container-small {
+    & > .elementor-container {
+      max-width: 920px;
+    }
+
+    @include tablet {
+      width: 720px;
+      margin: 0 auto;
+    }
+
+    @include mobile {
+      margin: 0 15px;
+    }
+  }
+
+  &.gg-container-large {
+    & > .elementor-container {
+      max-width: 1110px;
+    }
+
+    @include desktop {
+      margin: 0 15px;
+    }
+
+    @include tablet {
+      width: 720px;
+      margin: 0 auto;
+    }
+
+    @include mobile {
+      margin: 0 15px;
+    }
+  }
+
+  &.gg-container-large-padding {
+
+    & > .elementor-container {
+      max-width: 1110px;
+      padding: 144px 0;
+    }
+
+    @include desktop {
+      margin: 0 15px;
+    }
+
+    @include tablet {
+      width: 720px;
+      margin: 0 auto;
+      padding: 72px 0;
+    }
+
+    @include mobile {
+      padding: 40px 0;
+      margin: 0 15px;
+    }
+  }
+}
+
+$lists: top bottom;
+
+@each $element in $lists {
+  $padding-size: 8;
+  $max-padding: 144;
+  $num: 0;
+  @while $num <= $max-padding {
+    .gg-p-#{$num} {
+      padding-top: #{$num}px;
+      padding-bottom: #{$num}px;
+    }
+
+    .gg-p#{str-slice($element, 0, 1)}-#{$num} {
+      padding-#{$element}: #{$num}px;
+    }
+
+    .gg-m-#{$num} {
+      margin-top: #{$num}px;
+      margin-bottom: #{$num}px;
+    }
+
+    .gg-m#{str-slice($element, 0, 1)}-#{$num} {
+      margin-#{$element}: #{$num}px;
+    }
+
+    $num: $num + $padding-size;
+  }
+}

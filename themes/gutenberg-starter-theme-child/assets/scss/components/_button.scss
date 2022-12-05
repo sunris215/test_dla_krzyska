@@ -1,0 +1,35 @@
+.elementor-button,
+.elementor-widget-button .elementor-button,
+.apply-filters__button,
+body .elementor-widget-form .elementor-button,
+.elementor-widget-icon-box .elementor-icon-box-title {
+  @include font-size(18, 700, 18);
+
+  font-family: $lato-font-family;
+  transition: .5s;
+
+  @include mobile {
+    @include font-size(16, 700, 16);
+
+    font-family: $lato-font-family;
+    transition: .5s;
+  }
+}
+
+// Button V1
+.gg-button-v1 .elementor-button,
+.gg-button-v1.elementor-widget-button .elementor-button,
+body .elementor-widget-form .gg-button-v1.elementor-button,
+.gg-button-v1 .apply-filters__button {
+  border: 2px solid $primary-color;
+  background-color: $primary-color;
+  color: $white-color;
+  padding: 14px 31px;
+  border-radius: 0;
+
+  &:focus,
+  &:hover {
+    background-color: $secondary-color;
+    color: $primary-color;
+  }
+}

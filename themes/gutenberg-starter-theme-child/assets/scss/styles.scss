@@ -1,0 +1,17 @@
+// Global codes like: reset file, typography file, variables, mixins, placeholders
+@import 'assets/scss/base/*.scss';
+
+// Files of the external libraries like Normalize, Bootstrap, jQeuryUI
+@import 'assets/scss/vendor/vendors';
+
+// Small compontents used everywhere like button, checkbox, input, slider, loader
+@import 'assets/scss/components/*.scss';
+
+// Everything that takes part in laying out the site like grid, header, footer, forms, single
+@import 'assets/scss/layout/*.scss';
+
+// All sections used on the site like contact form, header banner
+@import 'assets/scss/sections/*.scss';
+
+// Styles for specific pages like About us, Homepage
+//@import 'assets/scss/pages/*.scss';

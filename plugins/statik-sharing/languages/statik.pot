@@ -1,0 +1,310 @@
+# Copyright (C) 2021 statik
+# This file is distributed under the same license as the statik package.
+msgid ""
+msgstr ""
+"Project-Id-Version: statik\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-KeywordsList: __;_e;_ex:1,2c;_n:1,2;_n_noop:1,2;_nx:1,2,4c;_nx_noop:1,2,3c;_x:1,2c;esc_attr__;esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: *.js\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: src/Plugin.php:94
+msgid "The plugin requires at least PHP 7.4"
+msgstr ""
+
+#: src/Plugin.php:99
+msgid "The plugin can be turned on only in Multisite instance!"
+msgstr ""
+
+#: src/Dashboard/Dashboard.php:145
+msgid "Are you sure you want to edit this page? After updating the Primary post, all changes will be overwritten!"
+msgstr ""
+
+#: src/Dashboard/Dashboard.php:163
+msgid "Your settings have not been updated. Please try again!"
+msgstr ""
+
+#: src/Dashboard/Dashboard.php:174
+msgid "Your settings have been updated."
+msgstr ""
+
+#: src/Dashboard/MetaBox.php:76, src/Share/Handler/AjaxShareHandler.php:44
+msgid "Invalid request nonce. Please reload page and try again!"
+msgstr ""
+
+#: src/Dashboard/MetaBox.php:83
+msgid "Sharing meta box cannot be displayed for provided post ID"
+msgstr ""
+
+#: src/Helper/ReplaceIdTrait.php:48, src/Share/Processor/Post/PostProcessor.php:201
+msgid "Post %s (ID: %s) does not exists on destination blog"
+msgstr ""
+
+#: src/Helper/ReplaceIdTrait.php:89
+msgid "Term %s (ID: %s) does not exists on destination blog"
+msgstr ""
+
+#: src/Helper/ReplaceIdTrait.php:134
+msgid "Nav menu %s (ID: %s) does not exists on destination blog"
+msgstr ""
+
+#: src/Partials/AttachmentLockModal.php:14, src/Partials/ReplicaModal.php:14
+msgid "This post is locked by Statik Sharing plugin."
+msgstr ""
+
+#: src/Partials/AttachmentLockModal.php:58, src/Partials/ReplicaModal.php:58
+msgid "This post is a replica of a post from another blog, is linked to it, and cannot be edited separately. If you want to edit this post, go to the primary blog."
+msgstr ""
+
+#: src/Partials/AttachmentLockModal.php:66, src/Partials/ReplicaModal.php:66
+msgid "Exit the Editor"
+msgstr ""
+
+#: src/Partials/AttachmentLockModal.php:70, src/Partials/MetaBoxDisabled.php:19, src/Partials/ReplicaModal.php:70
+msgid "Edit Primary post"
+msgstr ""
+
+#: src/Partials/MetaBox.php:23
+msgid "Blog name"
+msgstr ""
+
+#: src/Partials/MetaBox.php:24
+msgid "Post URL"
+msgstr ""
+
+#: src/Partials/MetaBox.php:28
+msgid "Select bulk action..."
+msgstr ""
+
+#: src/Partials/MetaBox.php:29
+msgid "Share posts"
+msgstr ""
+
+#: src/Partials/MetaBox.php:30
+msgid "Detach posts"
+msgstr ""
+
+#: src/Partials/MetaBox.php:31
+msgid "Delete posts"
+msgstr ""
+
+#: src/Partials/MetaBox.php:35
+msgid "Apply"
+msgstr ""
+
+#: src/Partials/MetaBox.php:106
+msgid "The blog will be shared by Cron task in the next few minutes"
+msgstr ""
+
+#: src/Partials/MetaBox.php:120
+msgid "Cancel"
+msgstr ""
+
+#: src/Partials/MetaBox.php:124
+msgid "Override"
+msgstr ""
+
+#: src/Partials/MetaBoxDisabled.php:16
+msgid "Sharing table is not available from the replica post level."
+msgstr ""
+
+#: src/Post/AttachmentPostFilter.php:83
+msgid "Statik Sharing keeps all attachments synchronize between blogs."
+msgstr ""
+
+#: src/Post/AttachmentPostFilter.php:86
+msgid "Attachments are shared using Cron task, so attachments on the other blocks will be accessible after a few minutes."
+msgstr ""
+
+#: src/Post/AttachmentPostFilter.php:94
+msgid "That could have an impact on the performance of upload process and take a few minutes more."
+msgstr ""
+
+#: src/Post/AttachmentPostFilter.php:174, src/Post/AttachmentPostFilter.php:198
+msgid "Delete permanently from all blogs"
+msgstr ""
+
+#: src/Post/AttachmentPostFilter.php:226
+msgid "Delete Permanently from all blogs"
+msgstr ""
+
+#: src/Dashboard/Page/HelpersPage.php:42, src/Dashboard/Page/HelpersPage.php:43
+msgid "Sharing helpers"
+msgstr ""
+
+#: src/Dashboard/Page/HelpersPage.php:204
+msgid "CSV file cannot be exported because not valid nonce. Please try again!"
+msgstr ""
+
+#: src/Dashboard/Page/SettingsPage.php:64
+msgid "Supported custom post types"
+msgstr ""
+
+#: src/Dashboard/Page/SettingsPage.php:73
+msgid "Synchronize media"
+msgstr ""
+
+#: src/Dashboard/Page/SettingsPage.php:74
+msgid "Keep all media synchronize between blogs"
+msgstr ""
+
+#: src/Dashboard/Page/SettingsPage.php:81
+msgid "Cron"
+msgstr ""
+
+#: src/Dashboard/Page/SettingsPage.php:82
+msgid "Could cause a delay in access to shared content"
+msgstr ""
+
+#: src/Dashboard/Page/SettingsPage.php:83
+msgid "Use cron tasks to share (experimental)"
+msgstr ""
+
+#: src/Dashboard/Table/PostsTable.php:43
+msgid "Sharing"
+msgstr ""
+
+#: src/Partials/Helpers/Logs.php:24
+msgid "Date"
+msgstr ""
+
+#: src/Partials/Helpers/Logs.php:35
+msgid "Level"
+msgstr ""
+
+#: src/Partials/Helpers/Logs.php:47
+msgid "Search"
+msgstr ""
+
+#: src/Partials/Helpers/Logs.php:52
+msgid "Time from"
+msgstr ""
+
+#: src/Partials/Helpers/Logs.php:57
+msgid "Time to"
+msgstr ""
+
+#: src/Partials/Helpers/Logs.php:61
+msgid "Filter"
+msgstr ""
+
+#: src/Partials/Helpers/Logs.php:68, src/Partials/Helpers/Logs.php:81
+msgid "No."
+msgstr ""
+
+#: src/Partials/Helpers/Logs.php:69, src/Partials/Helpers/Logs.php:82
+msgid "Time"
+msgstr ""
+
+#: src/Partials/Helpers/Logs.php:70, src/Partials/Helpers/Logs.php:83
+msgid "Type"
+msgstr ""
+
+#: src/Partials/Helpers/Logs.php:71, src/Partials/Helpers/Logs.php:84, src/Partials/Helpers/LogsTableRow.php:38
+msgid "Action"
+msgstr ""
+
+#: src/Partials/Helpers/Logs.php:72, src/Partials/Helpers/Logs.php:85, src/Partials/Helpers/LogsTableRow.php:46, src/Partials/Helpers/LogsTableRowDetails.php:51
+msgid "Source Blog"
+msgstr ""
+
+#: src/Partials/Helpers/Logs.php:73, src/Partials/Helpers/Logs.php:86, src/Partials/Helpers/LogsTableRow.php:49, src/Partials/Helpers/LogsTableRowDetails.php:58
+msgid "Source Post"
+msgstr ""
+
+#: src/Partials/Helpers/Logs.php:74, src/Partials/Helpers/Logs.php:87, src/Partials/Helpers/LogsTableRow.php:54, src/Partials/Helpers/LogsTableRowDetails.php:66
+msgid "Destination Blog"
+msgstr ""
+
+#: src/Partials/Helpers/Logs.php:75, src/Partials/Helpers/Logs.php:88, src/Partials/Helpers/LogsTableRow.php:57, src/Partials/Helpers/LogsTableRowDetails.php:73
+msgid "Destination Post"
+msgstr ""
+
+#: src/Partials/Helpers/Logs.php:76, src/Partials/Helpers/Logs.php:89, src/Partials/Helpers/LogsTableRow.php:41
+msgid "User"
+msgstr ""
+
+#: src/Partials/Helpers/LogsTableRow.php:65
+msgid "Warning message"
+msgstr ""
+
+#: src/Partials/Helpers/LogsTableRow.php:74
+msgid "Error message"
+msgstr ""
+
+#: src/Share/Handler/AjaxShareHandler.php:38
+msgid "Current user does not have permissions to share to this blog!"
+msgstr ""
+
+#: src/Share/Processor/AbstractProcessor.php:138
+msgid "The source blog %s does not exist"
+msgstr ""
+
+#: src/Share/Processor/AbstractProcessor.php:144
+msgid "The destination blog %s does not exist"
+msgstr ""
+
+#: src/Share/Processor/AbstractProcessor.php:149
+msgid "Sharing cannot be processed on the same blog"
+msgstr ""
+
+#: src/Share/Processor/AbstractProcessor.php:161
+msgid "Share validation error: %s"
+msgstr ""
+
+#: src/Share/Processor/Post/AbstractPostProcessor.php:54, src/Share/Processor/Post/AbstractPostProcessor.php:76
+msgid "Post processor requires the source object to be an instance of PostData"
+msgstr ""
+
+#: src/Share/Processor/Post/AbstractPostProcessor.php:59
+msgid "Source post cannot be replica type"
+msgstr ""
+
+#: src/Share/Processor/Post/AbstractPostProcessor.php:63, src/Share/Processor/Post/AbstractPostProcessor.php:85
+msgid "Revision post type cannot be processed"
+msgstr ""
+
+#: src/Share/Processor/Post/AbstractPostProcessor.php:67, src/Share/Processor/Post/AbstractPostProcessor.php:89
+msgid "Trashed post cannot be processed"
+msgstr ""
+
+#: src/Share/Processor/Post/AbstractPostProcessor.php:81
+msgid "Destination post cannot be primary type"
+msgstr ""
+
+#: src/Share/Processor/Post/AbstractPostProcessor.php:93
+msgid "Source and destination posts types are not consistent"
+msgstr ""
+
+#: src/Share/Processor/Post/AbstractPostProcessor.php:100
+msgid "Source and destination posts slugs are not consistent"
+msgstr ""
+
+#: src/Share/Processor/Post/AbstractPostProcessor.php:138
+msgid "Post cannot be shared because of slug conflict"
+msgstr ""
+
+#: src/Share/Processor/Post/AbstractPostProcessor.php:186
+msgid "An error occurred when trying to insert post: %s"
+msgstr ""
+
+#: src/Share/Processor/Post/AttachmentPostProcessor.php:57
+msgid "Attachment processor can be used to process only attachments"
+msgstr ""
+
+#: src/Share/Processor/Post/PostProcessor.php:66
+msgid "Not connected post cannot be deleted"
+msgstr ""
+
+#: src/Share/Processor/Post/PostProcessor.php:92
+msgid "Not connected post cannot be detached"
+msgstr ""
+
+#: src/Share/Processor/Post/PostProcessor.php:112
+msgid "Post processor cannot be used to process attachments"
+msgstr ""

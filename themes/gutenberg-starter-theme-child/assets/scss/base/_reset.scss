@@ -1,0 +1,33 @@
+.elementor-element p,
+.elementor-widget:not(:last-child) {
+  margin-bottom: 0;
+}
+
+// Clears the 'X' from Internet Explorer
+input[type="search"]::-ms-clear,
+input[type="search"]::-ms-reveal{
+  display: none;
+  width: 0;
+  height: 0;
+}
+
+// Clears the 'X' from Chrome
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-results-button,
+input[type="search"]::-webkit-search-results-decoration {
+  display: none;
+}
+
+// Break word
+div,
+p,
+span,
+.elementor-heading-title {
+  word-break: break-word;
+}
+
+// Listing grid equal height stretch fix
+.kurtosys-equal-columns .elementor-section-wrap > section > div {
+  height: 100%;
+}

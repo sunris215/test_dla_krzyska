@@ -1,0 +1,19 @@
+@mixin font-size($font-size, $font-weight: null, $line-height: null, $letter-spacing: null) {
+  @if unit($font-size) == '' {
+    font-size: $font-size * 1px;
+  } @else {
+    font-size: $font-size;
+  }
+
+  @if $font-weight {
+    font-weight: $font-weight;
+  }
+
+  @if $line-height {
+    line-height: $line-height;
+  }
+
+  @if $letter-spacing {
+    letter-spacing: $letter-spacing;
+  }
+}

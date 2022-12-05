@@ -1,0 +1,150 @@
+@import "variables";
+
+body,
+.elementor-element,
+.elementor-widget-heading .elementor-heading-title,
+.elementor-widget-heading p.elementor-heading-title,
+.kurtosys-listing-dynamic-field__content,
+.kurtosys-nav-link-text,
+.elementor-widget-icon-box .elementor-icon-box-content .elementor-icon-box-title,
+.elementor-widget-icon-box .elementor-icon-box-content .elementor-icon-box-description {
+  @include font-size(18px, 400, 1.5em);
+
+  font-family: $lato-font-family;
+  color: $primary-color;
+}
+
+.elementor-widget-text-editor .elementor-text-editor a,
+.elementor-widget-heading .elementor-heading-title a,
+a {
+  color: $secondary-color;
+  text-decoration: underline;
+  transition: .3s;
+}
+
+.elementor-widget-text-editor .elementor-text-editor a:hover,
+.elementor-widget-heading .elementor-heading-title a:hover,
+a:hover {
+  color: $secondary-color;
+}
+
+.gg-font-v1 {
+
+  &.elementor-element,
+  &.elementor-widget-text-editor,
+  &.elementor-widget-heading .elementor-heading-title,
+  .kurtosys-listing-dynamic-field__content {
+    @include font-size(56px, 400, 1.2em);
+
+    @include mobile {
+      font-size: 36px;
+    }
+  }
+}
+
+.gg-font-v2 {
+
+  &.elementor-element,
+  &.elementor-widget-text-editor,
+  &.elementor-widget-heading .elementor-heading-title,
+  .kurtosys-listing-dynamic-field__content {
+    @include font-size(42px, 400, 1.2em);
+
+    @include mobile {
+      font-size: 32px;
+    }
+  }
+}
+
+.gg-font-v3 {
+
+  &.elementor-element,
+  &.elementor-widget-text-editor,
+  &.elementor-widget-heading .elementor-heading-title,
+  .kurtosys-listing-dynamic-field__content {
+    @include font-size(36px, 400, 1.4em);
+
+    @include mobile {
+      font-size: 28px;
+    }
+  }
+}
+
+.gg-font-v4 {
+
+  &.elementor-element,
+  &.elementor-widget-text-editor,
+  &.elementor-widget-heading .elementor-heading-title,
+  .kurtosys-listing-dynamic-field__content,
+  cite.elementor-blockquote__author,
+  .kurtosys-tabs__content p {
+    @include font-size(18px, normal, 1.8em);
+
+    @include mobile {
+      font-size: 14px;
+    }
+  }
+}
+
+.gg-font-v5 {
+
+  &.elementor-element,
+  &.elementor-widget-text-editor,
+  &.elementor-widget-heading .elementor-heading-title,
+  .kurtosys-listing-dynamic-field__content,
+  li .elementor-icon-list-text {
+    @include font-size(20px, normal, 1.8em);
+
+    @include mobile {
+      font-size: 12px;
+    }
+  }
+}
+
+.gg-font-v6 {
+
+  &.elementor-element,
+  &.elementor-widget-text-editor,
+  &.elementor-widget-heading .elementor-heading-title,
+  .kurtosys-listing-dynamic-field__content {
+    @include font-size(16px, normal, 1.6em);
+
+    @include mobile {
+      font-size: 10px;
+    }
+  }
+}
+
+.gg-clamp-v1,
+.gg-clamp-v2,
+.gg-clamp-v3,
+.gg-clamp-v4,
+.gg-clamp-v5,
+.gg-clamp-v6 {
+  .elementor-heading-title,
+  .elementor-text-editor,
+  .jet-listing-dynamic-field__content,
+  .elementor-grid-item .elementor-post__excerpt,
+  .elementor-grid-item .elementor-post__title {
+    display: block;
+    display: -webkit-box;
+    max-width: 100%;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -o-text-overflow: ellipsis;
+  }
+}
+
+$max-clamp: 6;
+@for $i from 1 through $max-clamp {
+  .gg-clamp-v#{$i} {
+    .elementor-heading-title,
+    .elementor-text-editor,
+    .jet-listing-dynamic-field__content,
+    .elementor-grid-item .elementor-post__excerpt,
+    .elementor-grid-item .elementor-post__title {
+      -webkit-line-clamp: #{$i};
+    }
+  }
+}

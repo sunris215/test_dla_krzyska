@@ -1,0 +1,50 @@
+{
+  "name": "statik/common",
+  "license": "GPL-3.0-or-later",
+  "description": "Commons for Statik plugins.",
+  "config": {
+    "secure-http": false,
+    "optimize-autoloader": true,
+    "platform": {
+      "php": "7.4"
+    }
+  },
+  "require": {
+    "php": "^7.4|^8.0",
+    "laravel/helpers": "^1.3"
+  },
+  "require-dev": {
+    "roave/security-advisories": "dev-master",
+    "10up/wp_mock": "0.4.2",
+    "phpunit/phpunit": "^9",
+    "friendsofphp/php-cs-fixer": "^2.16",
+    "brainmaestro/composer-git-hooks": "^2.8",
+    "wp-cli/wp-cli": "^2.4"
+  },
+  "autoload": {
+    "psr-4": {
+      "Statik\\Common\\": "src/"
+    },
+    "files": [
+      "src/Common.php"
+    ]
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Statik\\Common\\Tests\\": "tests/src/"
+    }
+  },
+  "extra": {
+    "hooks": {
+      "pre-commit": "sh ./scripts/pre-commit.sh",
+      "pre-push": "vendor/bin/phpunit"
+    }
+  },
+  "scripts": {
+    "php-cs-fixer": "vendor/bin/php-cs-fixer fix",
+    "build-production": "bash ./scripts/build-prod.sh",
+    "post-install-cmd": "vendor/bin/cghooks update",
+    "post-update-cmd": "vendor/bin/cghooks update",
+    "phpunit": "vendor/bin/phpunit"
+  }
+}
